@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto">
+
+    <!-- Skip -->
+    <item
+        android:id="@+id/menu_login"
+        android:title="LOGIN"
+        android:icon="@null"
+        android:orderInCategory="100"
+        apps:showAsAction="always"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu_logout"
+        android:title="LOG OUT"
+        android:icon="@null"
+        android:orderInCategory="100"
+        apps:showAsAction="always"
+        android:visible="false"/>
+</menu>

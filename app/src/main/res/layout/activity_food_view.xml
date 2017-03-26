@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_food_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.smartgrocery.smartgrocery.FoodViewActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_food_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/foodWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Test"/>
+    <Button
+        android:id="@+id/restockedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restocked"
+        android:layout_alignBaseline="@id/foodWeight"
+        android:layout_toRightOf="@id/foodWeight"/>
+
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_margin="5dp"
+        android:paddingTop="20dp"
+        android:text = "Temperature:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restockedButton"/>
+    <EditText
+        android:id="@+id/tempEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:hint="test"
+        android:layout_toRightOf="@id/tempView"
+        android:layout_alignBaseline="@id/tempView"/>
+    <Button
+        android:id="@+id/submitTempButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Submit"
+        android:layout_toRightOf="@id/tempEditText"
+        android:layout_alignBaseline="@id/tempEditText"/>
+
+
+    <TextView
+        android:id="@+id/humidityView"
+        android:layout_margin="5dp"
+        android:paddingTop="20dp"
+        android:text = "Humidity:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempView"/>
+    <EditText
+        android:id="@+id/humidityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:hint="test"
+        android:layout_toRightOf="@id/humidityView"
+        android:layout_alignBaseline="@id/humidityView"/>
+    <Button
+        android:id="@+id/submitHumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Submit"
+        android:layout_toRightOf="@id/humidityEditText"
+        android:layout_alignBaseline="@id/humidityEditText"/>
+
+
+    <TextView
+        android:id="@+id/priceView"
+        android:paddingTop="20dp"
+        android:layout_margin="5dp"
+        android:text = "Price:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidityView"/>
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:hint="test"
+        android:layout_toRightOf="@id/priceView"
+        android:layout_alignBaseline="@id/priceView"/>
+    <Button
+        android:id="@+id/submitPriceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Submit"
+        android:layout_toRightOf="@id/priceEditText"
+        android:layout_alignBaseline="@id/priceEditText"/>
+
+</RelativeLayout>
